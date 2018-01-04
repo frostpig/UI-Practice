@@ -1,3 +1,16 @@
+
+body{
+    background-color: #EEEEEE;
+    display: block;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+
+}
 .indexBackgroundColor{
     background-color: #e8e8e8;
 }
@@ -6,6 +19,97 @@
     color: red;
 }
 
+.shortcut{
+    display: block;
+}
+ul{
+    display: block;
+}
 a{
     color: red;
+}
+.w{
+    line-height: 30px;
+    display: block;
+
+}
+.header .w{
+    position: relative;
+    z-index: 11;
+    height: 140px;
+}
+.f1{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+#logo .log_tit{
+    position: absolute;
+}
+
+#logo {
+    z-index: 2;
+    left: 0;
+    top:-50px;
+    width: 190px;
+    height: 170px;
+    box-shadow: 0px -1px 10px rgba(0,0,0,1);
+    background-color: #ffffff;
+    border-bottom: 1px solid #ededed;
+
+}
+.log_tit{
+    width: 100%;
+    height: 100%;
+ }
+.log_tit_lk{
+    position: relative;
+    background-position: 0 0;
+    display: block;
+    overflow: hidden;
+    height: 150px;
+    background-image: url("../../images/sprite.head.png");
+}
+
+h1{
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after:0.67em;
+    -webkit-margin-end: 0px;
+    -webkit-margin-start: 0px;
+    font-weight: bold;
+
+}
+.fs .fsinner{
+    position: relative;
+    z-index: 9;
+    margin-bottom: 30px;
+}
+
+.fsinner{
+    height: 480px;
+background-color: #f0f3ef;
+}
+
+.fscol1 .fscol2{
+    float: left;
+    height: 480px;
+    margin-right: 10px;
+}
+.fscol1{
+    width: 190px;
+}
+#search-btn{
+    background-color: red;
+}
+#glyphicon-search{
+    background-color: #f7f7f7;
+}
+.iconfont{
+  font-family: iconfont;
+  font-style: normal;
+    -webkit-text-stroke-width:.2px;
 }
