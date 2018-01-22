@@ -9,6 +9,18 @@
     <script src="../../jd/js/jd.js"></script>
     <title>首页</title>
 </head>
+<style>
+    .test
+    {
+        line-height: 1.2;
+        max-height: 2.4em;
+        display:-webkit-box;
+        -webkit-line-clamp:2;
+        -webkit-box-orient:vertical;
+        overflow:hidden;
+
+    }
+</style>
 <body style="">
     <div class="container-fluid">
 
@@ -116,10 +128,83 @@
 
             </div>
             <div class="fscol3">
+                <table class="table table-bordered">
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>1==2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><table>
+                            <thead>
+                            <tr>
+                                <th>1</th>
+                                <th>1</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>3</td>
+                            </tr>
+                            </tbody>
+                        </table></td>
+                    </tr>
+                    </tbody>
+                </table>
 
+                <table class="table table-bordered">
+                    <tbody>
+                        <td id="example"  data-placement="top" >
+                            <div style="background-color:#ccc">
+                                <a data-html="true" class="tooltip-data" href="#" data-toggle="tooltip" title="1<br>2">1
+                                </a>
+                            </div>
+                            1</td>
+                        <td>2</td>
+                        <td>
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>1</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
 
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+    <div class="test" style="text-overflow:ellipsis;width: 200px">This is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fiThis is some long text that will not fit in the boxThis is some long text that will not fit in the boxThis is some long text that will not fit in the boxThis is some long text that will not fit in the box</div>
+    <button id="custom" class="btn btn-default" data-toggle="popover" data-trigger="hover" data-html="true" title="显示的标题"  data-placement="bottom" data-content='<h3 style="color:#F00;">显示的内容</h3><button type="submit">pop的按钮</button>'>点我</button>
+    <ul class="list-unstyle">
+        <li >
+            <span class="glyphicon glyphicon-menu-left"></span>父亲
+        </li>
+    </ul>
 </body>
 </html>
+
+<script>
+    $(document).ready(function () {
+
+        $('#custom').popover('toggle');
+
+    });
+
+</script>
