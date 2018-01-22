@@ -5,15 +5,26 @@
     <title>聚美</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="../css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/treeView.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
 <div class="container-fluid">
     <div class="row-fluid">
         <ul class="unstyled">
-            <li>
-                <i class="icon-plus"></i> 父亲
-                <i class="icon-minus"></i> 父亲
+            <li class="list-group-item" data-nodeid="0">
+                <i class="icon-plus" id="parent" onclick="exspand(event)"></i> 爸爸
             </li>
+            <li class="list-group-item" data-nodeid="0-1">
+                <i class="icon-plus  offset1" onclick="exspand(event)"></i> 爸爸
+            </li>
+            <li class="list-group-item " data-nodeid="2">
+                <i class="icon-plus offset1"  onclick="exspand(event)"></i> 爸爸
+            </li>
+            <li class="list-group-item" data-nodeid="0">
+                <i class="icon-plus" id="" onclick="exspand(event)"></i> 爸爸
+            </li>
+
         </ul>
     </div>
 
@@ -21,8 +32,15 @@
 
 <script src="../js/jquery-1.9.1.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
+<script src="../js/bootstrap-treeview.js"></script>
+<script src="../js/treeview.js"></script>
 <script>
+/* function exspand(event) {
+     var target = $(event.target);
+     var nodeId = target.closest('li.list-group-item').attr('data-nodeid');
+     console.log("id：" + nodeId);
 
+ }*/
 </script>
 </body>
 
