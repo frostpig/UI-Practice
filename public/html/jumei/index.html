@@ -27,7 +27,32 @@
 
         </ul>
     </div>
-
+    <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle">
+                    Collapsible Group Item #1
+                </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse in">
+                <div class="accordion-inner">
+                    Anim pariatur cliche...似乎放低身段元提高ii色日事发后哦我就和我i一二月份后
+                </div>
+            </div>
+        </div>
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                <a class="accordion-toggle">
+                    Collapsible Group Item #2
+                </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+                    的哥就地加工点附近更好地发挥大家的日提交天kid就会日
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="../js/jquery-1.9.1.min.js"></script>
@@ -41,6 +66,14 @@
      console.log("id：" + nodeId);
 
  }*/
+
+$(".accordion-heading").click(function (e) {
+    console.log($(this).next());
+       $(this).next().collapse("toggle");
+})
+
+
+
 </script>
 </body>
 
