@@ -212,7 +212,11 @@
                 }
             });*/
             /*window.location.href ="http://baidu.com";*/
-           svg.select("div","name").append("p").text("我是谁");
+           /*svg.select("div").append("p").text("我是谁");*/
+
+           console.log(d3.select("svg"));
+            d3.select("svg").append("p");
+
 
             //d3.select(this).style('stroke-width',2);
         })
