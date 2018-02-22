@@ -44,13 +44,13 @@
 
     // http://blog.thomsonreuters.com/index.php/mobile-patent-suits-graphic-of-the-day/
     var links = [
-        {source: "同花顺", target: "IFIND", type: "resolved", rela:"主营产品",tps:"2345"},
-        {source: "同花顺", target: "手机金融信息服务", type: "resolved", rela:"主营产品",tps:"2345"},
-        {source: "同花顺", target: "互联网金融信息服务", type: "resolved", rela:"主营产品",tps:"2345"},
-        {source: "同花顺", target: "网上行情交易系统", type: "resolved", rela:"主营产品",tps:"2345"},
-        {source: "同花顺", target: "金融资讯及数据服务", type: "resolved", rela:"主营产品",tps:"2345"},
-        {source: "同花顺", target: "互联网金融", type: "resolved",rela:"主营产品",tps:"2345"},
-        {source: "同花顺", target: "金融服务", type: "resolved",rela:"主营产品",tps:"2345"},
+        {source: "GetDE", target: "IFIND", type: "resolved", rela:"主营产品",tps:"2345"},
+        {source: "GetDE", target: "手机金融信息服务", type: "resolved", rela:"主营产品",tps:"2345"},
+        {source: "GetDE", target: "互联网金融信息服务", type: "resolved", rela:"主营产品",tps:"2345"},
+        {source: "GetDE", target: "网上行情交易系统", type: "resolved", rela:"主营产品",tps:"2345"},
+        {source: "GetDE", target: "金融资讯及数据服务", type: "resolved", rela:"主营产品",tps:"2345"},
+        {source: "GetDE", target: "互联网金融", type: "resolved",rela:"主营产品",tps:"2345"},
+        {source: "GetDE", target: "金融服务", type: "resolved",rela:"主营产品",tps:"2345"},
         {source: "手机金融信息服务", target: "金融信息服务", type: "resolved", rela:"上位产品",tps:"2345"},
         {source: "互联网金融信息服务", target: "金融信息服务", type: "resolved", rela:"上位产品",tps:"2345"},
         {source: "二三四五002195", target: "金融信息服务", type: "resolved", rela:"主营产品",tps:"2345"},
@@ -212,9 +212,9 @@
     circle.append("svg:title")
         .text(function(node) {
             var link=links[node.index];
-            if(node.name==link.source.name && link.rela=="主营产品"){
-                return "双击可查看详情"
-            }
+
+                return link.source.name;
+
         });
     /* 矩形
      var rect=svg.append("rect")
